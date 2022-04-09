@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, 未来博客">
+    <meta name="keywords" content="分类: git, 未来博客">
     <meta name="description" content="未来&#39;你">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类 | 未来博客</title>
+    <title>分类: git | 未来博客</title>
     <link rel="icon" type="image/png" href="/weilaiblog.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/weilaiblog.github.io/libs/awesome/css/all.css">
@@ -356,7 +356,7 @@
                 
                 <a href="/weilaiblog.github.io/categories/git/" title="git: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
+                             chip-active "
                             style="background-color: #FEF9E7;">git
                         <span class="tag-length">1</span>
                     </span>
@@ -370,65 +370,78 @@
 
 
     
-    <style type="text/css">
-    #category-radar {
-        width: 100%;
-        height: 360px;
-    }
-</style>
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="category-radar" class="card-content"></div>
-    </div>
-</div>
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/weilaiblog.github.io/2022/04/09/git%E5%8F%91%E5%B8%83%E9%A1%B9%E7%9B%AE%E5%88%B0GitHub/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/weilaiblog.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="git发布项目到GitHub">
+                            
+                            <span class="card-title">git发布项目到GitHub</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                通过git部署代码到GitHub代码获取磁盘位置
+cd /d/phpdoc
 
-<script type="text/javascript" src="/weilaiblog.github.io/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let radarChart = echarts.init(document.getElementById('category-radar'));
+初始化git工具
+git init
 
-    
+本地文件添加到Git
+git add .
 
-    let option = {
-        title: {
-            left: 'center',
-            text: '文章分类雷达图',
-            textStyle: {
-                fontWeight: 500,
-                fontSize: 22
-            }
-        },
-        tooltip: {},
-        radar: {
-            name: {
-                textStyle: {
-                    color: '#3C4858'
-                }
-            },
-            indicator: [{"name":"软件使用","max":2},{"name":"建站","max":2},{"name":"计算机","max":2},{"name":"报考","max":2},{"name":"git","max":2}],
-            nameGap: 5,
-            center: ['50%','55%'],
-            radius: '66%'
-        },
-        series: [{
-            type: 'radar',
-            color: ['#3ecf8e'],
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data : [
-                {
-                    value : [1,1,1,1,1],
-                    name : '文章分类数量'
-                }
-            ]
-        }]
-    };
+文件备注
+git commit -m '这里写备注'
 
-    radarChart.setOption(option);
-</script>
+上传仓库
+git rem
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-09
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/weilaiblog.github.io/categories/git/" class="post-category">
+                                    git
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
 
-    
-
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/weilaiblog.github.io/tags/GitHub/">
+                            <span class="chip bg-color">GitHub</span>
+                        </a>
+                        
+                        <a href="/weilaiblog.github.io/tags/%E9%83%A8%E7%BD%B2/">
+                            <span class="chip bg-color">部署</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
